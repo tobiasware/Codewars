@@ -57,7 +57,9 @@ def is_interesting(num, phrase):
 		interesting = 1
 
 	for x in range(num, num+3):
-		if zero(num) or same(num) or seq_inc(num) or seq_dec(num) or palindrom(num) or awesome_phrase(n, phrase):
+		if zero(num) or same(num) or seq_inc(num) or seq_dec(num) or palindrom(num) or awesome_phrase(num, phrase):
 			return interesting
 
-print(is_interesting(1000, []))
+#print(is_interesting(1000, [111]))
+
+print(is_interesting(1337, [1337, 256]))
